@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: akony_font;
+    src: url(./AKONY.woff2);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: akony_font;
+}
+.container{
+    cursor: pointer;
+}
+span{
+    font-size: 100px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: inline-block;
+    margin-left: 5px;
+    /* background: linear-gradient(to left, #a3b18a    , #3a5a40);
+    -webkit-background-clip: text; */
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    user-select: none;
+}
+span.active{
+    animation: jump 2s ease;
+    -webkit-animation: jump 2s linear;
+}
+@keyframes jump {
+    0% {
+        transform: translate(0,0)  rotate(45deg)  ;
+} 
+50%{
+    transform: scale(2.5) translate(0,-180px)  rotate(-180deg);
+}
+100%{
+    transform: scale(1) translate(0,0);
+}
+}

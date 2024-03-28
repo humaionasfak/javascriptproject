@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- remixicon link css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/swiper-bundle.min.css">
+    <!-- style main css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- ========== header Section start ========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Sneakers</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li>
+                        <a href="#" class="nav_link">home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_link">about us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_link">new</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_link">collection</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_link">contact</a>
+                    </li>
+        
+                </ul>
+
+                <!-- close button  -->
+                <div class="nav_close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+                <div class="nav_social">
+                    <a href="#"  class="nav_social_link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                    <a href="#"  class="nav_social_link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="#"  class="nav_social_link">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="nav_toogle" id="nav-toogle">
+                <i class="ri-apps-2-line"></i>
+            </div>
+        </nav>
+
+    </header>
+    <!-- ========== header Section End  ========== -->
+    <!-- ========== Start main Section ========== -->
+    <main class="main">
+        <section class="home">
+            <div class="home_container">
+                <div class="home_data">
+                    <h3 class="home_subtitle">new in</h3>
+                    <div thumbsSlider="" class="home_titles swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h1 class="home_title">
+                                    Yeezy Boost <br> 350 v2 clay
+                                </h1>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <h1 class="home_title">
+                                    Hyperdunk X <br> TB Urban Red
+                                </h1>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <h1 class="home_title">
+                                    Air Mag <br> 3000 X1 future
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="home_btn">
+                        Buy Now <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="home_image">
+                    <div class="home_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home_article swiper-slide">
+                                <div class="home_card">
+                                    <div class="home_circle home_circle_one">
+                                        <img src="./img/sneaker-1.png" alt="" class="home_img_1">
+                                        <img src="./img/sneaker-2.png" alt="" class="home_img_2">
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="home_article swiper-slide">
+                                <div class="home_card">
+                                    <div class="home_circle home_circle_tow">
+                                        <img src="./img/sneaker-3.png" alt="" class="home_img_1">
+                                        <img src="./img/sneaker-4.png" alt="" class="home_img_2">
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="home_article swiper-slide">
+                                <div class="home_card">
+                                    <div class="home_circle home_circle_three">
+                                        <img src="./img/sneaker-5.png" alt="" class="home_img_1">
+                                        <img src="./img/sneaker-6.png" alt="" class="home_img_2">
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <footer class="home_footer">
+                    <div class="home_controls">
+                          <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="home_navigation">
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-fill"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-fill"></i>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="home_social">
+                        <a href="" class="home_social_link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+                        <a href="" class="home_social_link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="" class="home_social_link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ========== End main Section ========== -->
+    <script src="./assets/swiper-bundle.js"></script>
+    <!-- js link  -->
+    <script src="./script.js"></script>
+</body>
+</html>
