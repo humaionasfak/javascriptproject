@@ -1,0 +1,70 @@
+/***** common css Section *****/  
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #e9edc9;
+}
+
+/***** common css Section End *****/
+.container{
+    background: #ccd5ae;
+    box-shadow: 2px 2px 5px #0000006c;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 500px;
+    height: 350px;
+    margin: 10px;
+    position: relative;
+}
+h2{
+    font-size: 30px;
+    margin: 20px 20px;
+}
+ul li{
+    margin: 10px;
+    font-size: 1.5rem;
+}
+button{
+    margin-top: 10px;
+    padding: 8px 50px;
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+    background-color: #faedcd;
+    position: absolute;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    left: 0;
+}
+h3{
+    background: rgb(133, 92, 68);
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    transform: translateX(50px);
+    right: 0;
+    transform-origin: left;
+    transition: 0.5s;
+}

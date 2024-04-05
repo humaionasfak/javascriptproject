@@ -1,5 +1,5 @@
 const container = document.querySelectorAll("span");
-console.log(container);
+// console.log(container);
 // container.forEach((span) => {
 //   span.addEventListener("click", () => {
 //     span.classList.toggle("active");
