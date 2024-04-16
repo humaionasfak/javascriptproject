@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main_watch">
+            <div class="main_clock">
+                <p class="clock"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const clock = document.querySelector('.clock')
+        const timeFunction = () =>{
+            let setTime = new Date().toLocaleTimeString()
+            clock.innerHTML = setTime
+        }
+       let interval = setInterval(timeFunction, 1000)
+       console.log(interval)
+    //    setTimeout(() => clearInterval(interval), 5000)
+
+    </script>
+</body>
+</html>

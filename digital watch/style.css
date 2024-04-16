@@ -1,0 +1,53 @@
+/***** common css Section *****/  
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #669bbc;
+}
+/***** common css Section End *****/
+/*<========= main section ===========>*/
+.container{
+    width: 400px;
+    max-height: 200px;
+    background: #003049;
+    padding: 20px 50px;
+    border: 2px solid #dad7cd;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 6px 1px #002f495d;
+    position: relative;
+
+}
+.container::after{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 5px;
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+    background: #9fdaff;
+    box-shadow: 0 8px 6px 2px #002f4949;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.container p{
+    font-size: 48px;
+    color: #dad7cd;
+
+
+
+}

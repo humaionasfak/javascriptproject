@@ -1,0 +1,60 @@
+/***** common css Section *****/  
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background:#3c3c3c;
+}
+.container{
+    width: 400px;
+    padding: 10px;
+    
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+input{
+    width: 70%;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+button{
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px ;
+    cursor: pointer;
+    color: #000;
+    background-color: rgb(255, 187, 0);
+}
+.main_todo_div{
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    width: 70%;
+    
+    
+}
+.main_todo_div li{
+    font-size: 30px;
+    color: #fff;
+}
+/***** common css Section End *****/

@@ -6,7 +6,7 @@ const container = document.querySelectorAll("span");
 //   });
 // });
 for (let elm in container) {
-  container[elm].addEventListener("click", () => {
+  container[elm].addEventListener("click", (e) => {
     container[elm].classList.toggle("active");
   });
 }
