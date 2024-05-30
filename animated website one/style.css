@@ -1,0 +1,313 @@
+/***** common css Section *****/  
+*{
+    box-sizing: border-box;
+    color: #fff;
+
+}
+@font-face {
+    font-family: Montserrat ;
+    src: url(./Assests/Montserrat/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium ;
+    src: url(./Assests/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-ExtraBold ;
+    src: url(./Assests/Montserrat/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold ;
+    src: url(./Assests/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(./Assests/Montserrat/Montserrat-Light.ttf);
+}
+body{
+    font-family: Montserrat;
+    perspective: 800px;
+}
+h1,h2,h3,h4,h5,h6, ol, ul, p{
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: fixed;
+    z-index: -1;
+}
+.cursor{
+    width: 20px;
+    height:20px;
+    background: #95C11E;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    transition: 0.01s;
+    pointer-events: none;
+}
+.cursor-blur{
+    pointer-events: none;
+    width: 400px;
+    height: 400px;
+    background: #96c11e49;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    transition: 0.01s;
+    filter: blur(60px);
+    transition: 0.02s;
+}
+/***** common css Section End *****/
+nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    padding: 0 0 0 50px;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    font-family: Montserrat-Bold ;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+}
+nav img{
+    height: 75px;
+}
+/* main */
+main{
+    position: relative;
+    background: rgba(0, 0,   0, 0.37);
+}
+main #page-one{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main #page-one h1{
+    font-family: Montserrat ;
+    font-size: clamp(40px, 15vw , 130px);
+    text-align: center;
+    position: relative;
+}
+main #page-one h1::after{
+    content: 'EAT. DRINK. PLAY.';
+    position: absolute;
+    top: -6px;
+    left: -8px;
+    color: #000;
+    -webkit-text-stroke: 2px #95C11E;
+    z-index: -1;
+    
+
+}
+main #page-one h2{
+    font-family: Montserrat-ExtraBold ;
+    font-size:30px;
+    text-align: center;
+    margin: 20px 0;
+}
+main #page-one p{
+    font-family: Montserrat-Medium ;
+    font-size:20px;
+    max-width: 700px;
+    text-align: center;
+}
+ #page-two{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+}
+.scroller{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 10;
+}
+.scroller::-webkit-scrollbar{
+
+    display: none;
+}
+.scroller .scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroller;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.scroller h4{
+    display: inline-block;
+    font-size: clamp(80px , 20vw, 100px);
+    -webkit-text-stroke: 2px #95C11E;
+    color: transparent;
+    transition: all linear 0.5s;
+}
+.scroller h4:hover{
+    color: #95C11E;
+}
+@keyframes scroller {
+    from{
+        transform: translateX(0);
+    }    
+    to{
+        transform: translateX(-100%)
+    }
+}
+#page-two .about-us figure{
+    width: 200px;
+    height: 200px;
+
+}
+#page-two .about-us figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#page-two .about-us{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    width: 100%;
+    height: 40vh;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    z-index: 10px;
+}
+#page-two .about-us .about-text{
+    text-align: center;
+    max-width: 600px;
+}
+#page-two .about-us h3{
+    text-align: center;
+    /* width: fit-content; */
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.card-container{
+    height: 100vh;
+    gap: 50px;
+    position: relative;
+    z-index: 111;
+}
+.card-card{
+    height: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+.card-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.35s;
+}
+.card-card:hover img{
+    transform: scale(1.2);
+}
+.card-card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #95C11E;
+    height: 100%;
+    padding: 50px;
+    padding-top: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35s;
+    
+}
+.card-card:hover .overlay{
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+
+}
+.card-card .overlay h5{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 40px;
+
+}
+.card-card .overlay p{
+    color: #000;
+    font-size: 16px;
+    font-family: Montserrat-Light;
+}
+.card-card:hover{
+    transform: rotate3d(1,1,0, 20deg);
+}
+.card-card .title{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+}
+.card-card .title h3{
+    font-size: 40px;
+}
+.green-img{
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(160deg , #ACDF23, #4DAF2E );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.green-img img{
+    height: 100%;
+    object-fit: cover;
+    width: 10%;
+}
+.green-img h4{
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    color: #000;
+    line-height: 50px;
+}
+#page-three{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -29,6 +29,7 @@ body{
     text-align: center;
     box-shadow: 0 8px 6px 1px #002f495d;
     position: relative;
+    box-shadow: inset 5px 5px 10px #000,inset 10px 10px 10px #4644446c;
 
 }
 .container::after{
