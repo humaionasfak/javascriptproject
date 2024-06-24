@@ -1,0 +1,19 @@
+/***** common css Section *****/  
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(138deg, #153677, #4e085f);
+}
+/***** common css Section End *****/
