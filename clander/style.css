@@ -1,0 +1,53 @@
+/***** common css Section *****/  
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: slateblue;
+    font-family: cursive;
+}
+/***** common css Section End *****/
+.calender-container{
+    background: #fff;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0 ,0,0,.3);
+    overflow: hidden;
+}
+.month-name{
+    background: orangered;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.day-name{
+    font-size: 20px;
+    color: darkgray;
+    margin-top: 20px;
+}
+.day-num{
+    font-size: 80px;
+    font-weight: 500;
+
+}
+.year{
+    margin: 20px 0;
+    color: darkgray;
+    font-size: 20px;
+}

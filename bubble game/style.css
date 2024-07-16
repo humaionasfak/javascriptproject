@@ -1,0 +1,96 @@
+/***** common css Section *****/  
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/***** common css Section End *****/
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(193, 255, 193);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.ptop{
+    width: 100%;
+    height: 100px;
+    background: rgb(55, 82, 56);
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+    justify-content: space-between;
+}
+.center{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.box{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(25, 65, 25);
+    font-weight: bold;
+    font-size: 25px;
+}
+.pbottom{
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.bubble{
+    width: 60px;
+    height: 60px;
+    background: rgb(55, 82, 56);
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.35s;
+
+}
+h1{
+    font-size: 50px;
+    color: red;
+}
+.bubble:hover{
+    background-color:rgb(25, 65, 25) ;
+}

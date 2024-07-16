@@ -1,24 +1,38 @@
-// let greet = "hello world";
-// console.log(greet);
-// for (let i = 1; i <= 5; i++) {
-//   console.log(i);
-// }
-// let i = 0;
-// while (i <= 5) {
-//   console.log(i);
-//   i++;
-// }
-// let j = 0;
-// do {
-//   console.log(j);
-//   j++;
-// } while (j <= 5);
-// function addNumber(a, b) {
-//   return a + b;
-// }
-// let sum = addNumber(5, 10);
-// console.log(sum);
-const calAreaOfRec = (width, height) => {
-  return width * height;
-};
-console.log(calAreaOfRec(5, 20));
+const inputBox = document.querySelector("#input-box");
+const listContainer = document.querySelector(".list-container");
+const button = document.querySelector("button");
+function addText() {
+  if (inputBox.value == "") {
+    alert("your must write something");
+  } else {
+    let li = document.createElement("li");
+    li.innerHTML = inputBox.value;
+    listContainer.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+  }
+  inputBox.value = "";
+  saveData();
+}
+listContainer.addEventListener(
+  "click",
+  function (e) {
+    if (e.target.tagName === "LI") {
+      e.target.classList.toggle("checked");
+      saveData();
+    } else if (e.target.tagName === "SPAN") {
+      e.target.parentElement.remove();
+      saveData();
+    }
+  },
+  false
+);
+function saveData() {
+  localStorage.setItem("data", listContainer.innerHTML);
+}
+function showTask() {
+  listContainer.innerHTML == localStorage.getItem("data");
+}
+showTask();
+button.addEventListener("click", addText);
