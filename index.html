@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook Clone Check</title>
 </head>
 <body>
+    <h1>Facebook Clone Check</h1>
+    <input type="text" id="facebookId" placeholder="Enter Facebook ID">
+    <input type="text" id="originalUserName" placeholder="Enter Original User Name">
+    <button onclick="checkClone()">Check Clone</button>
+    <div id="result"></div>
+    
     <script>
-        window.location.replace('./Senakar website/index.html')
+        async function checkClone() {
+            const facebookId = document.getElementById('facebookId').value;
+            const originalUserName = document.getElementById('originalUserName').value;
+
+            const response = await fetch('http://localhost:3000/check-clone', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ facebookId, originalUserName })
+            });
+
+            const data = await response.json();
+            document.getElementById('result').innerText = JSON.stringify(data, null, 2);
+        }
     </script>
 </body>
 </html>

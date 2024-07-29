@@ -1,0 +1,44 @@
+/***** common css Section *****/  
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/***** common css Section End *****/
+body{
+    width: 100vw;
+    height: 100vh;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: grid;
+    place-content: center;
+}
+h1{
+    font-size: clamp(50px, 20vw, 80px);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cursor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    mix-blend-mode: difference;
+}

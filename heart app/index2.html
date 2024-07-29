@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #000;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            cursor: none;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            background: url(./heart\ icon.png);
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: heart 2s linear;
+        }
+        @keyframes heart {
+        0%{
+            transform: translate(-50%,-50%);
+            opacity: 1;
+            filter: hue-rotate(0);
+        }          
+        100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }  
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let bodyEl = document.querySelector("body")
+        bodyEl.addEventListener('mousemove', (e) =>{
+            let pX = e.offsetX
+            let pY = e.offsetY
+            let span = document.createElement('span')
+            let size = Math.floor(Math.random() * 100)
+            span.style.width = size + 'px'
+            span.style.height =  size + 'px'
+            span.style.left = pX + 'px'
+            span.style.top = pY + 'px'
+            bodyEl.appendChild(span)
+            setTimeout(() =>{
+                span.remove()
+            },3000)
+        })
+    </script>
+</body>
+</html>

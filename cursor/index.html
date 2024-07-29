@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="text">
+            <h1>Humaion asfak</h1>
+        </div>
+        <div class="cursor">
+
+        </div>
+    </main>
+    <script>
+        let main = document.querySelector('main')
+        let text = document.querySelector('h1')
+        let crsr = document.querySelector('.cursor')
+
+        main.addEventListener('mousemove', (event)=>{
+            let pX = event.pageX;
+            let pY = event.pageY;
+            crsr.style.left = pX + 'px';
+            crsr.style.top = pY + 'px'
+        })
+    </script>
+</body>
+</html>
